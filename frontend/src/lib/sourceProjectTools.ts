@@ -1,5 +1,19 @@
 export const sourceProjectTools = [
   {
+    "id": "bail-bond-risk-copilot",
+    "title": "Bail Bond Risk Copilot",
+    "category": "Bail Bond Risk",
+    "description": "Focused Bail Bond Risk AI tool elevated inside the current merged suite.",
+    "defaultPrompt": "Review the Bail Bond Risk context. Return a professional summary, risks, missing evidence, next actions, and audit-ready outputs.",
+    "inputLabel": "Bail Bond Risk context",
+    "outputLabel": "Bail Bond Risk AI response",
+    "signals": [
+      "Bond Risk Assessment",
+      "Court Appearance Monitoring",
+      "Surety Packet"
+    ]
+  },
+  {
     "id": "aiaml-transaction-monitoring-source-workflow",
     "title": "AIAML Transaction Monitoring Source Workflow",
     "category": "Source Project Coverage",

@@ -2,6 +2,8 @@
 
 The combined dashboard includes:
 
+- Bail Bond Risk operating view
+
 - Case severity and deadlines
 - Fraud alert triage and scoring
 - AML monitoring and SAR drafts

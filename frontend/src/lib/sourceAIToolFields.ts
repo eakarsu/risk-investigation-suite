@@ -10,6 +10,43 @@ export type SourceAIToolField = {
 };
 
 export const sourceAIToolFieldsByToolId: Record<string, SourceAIToolField[]> = {
+  "bail-bond-risk-copilot": [
+    {
+      "name": "objective",
+      "label": "Objective",
+      "type": "textarea",
+      "defaultValue": "Improve the Bail Bond Risk workflow and produce audit-ready next actions.",
+      "placeholder": "Describe the goal",
+      "options": [],
+      "required": true,
+      "source": "AIBailBondRiskAssessor"
+    },
+    {
+      "name": "source_context",
+      "label": "Source Context",
+      "type": "textarea",
+      "defaultValue": "Paste Bail Bond Risk source details, notes, records, or documents.",
+      "placeholder": "Paste source context",
+      "options": [],
+      "required": true,
+      "source": "AIBailBondRiskAssessor"
+    },
+    {
+      "name": "output_format",
+      "label": "Output Format",
+      "type": "select",
+      "defaultValue": "Action plan",
+      "placeholder": "Select output format",
+      "options": [
+        "Action plan",
+        "Executive summary",
+        "Evidence table",
+        "Checklist"
+      ],
+      "required": true,
+      "source": "AIBailBondRiskAssessor"
+    }
+  ],
   "aiaml-transaction-monitoring-ai-adverse-media-screen-page-jhn0j4-exact-ai": [
     {
       "name": "context",

@@ -1,8 +1,8 @@
 # Risk Investigation Suite Source Data Tables
 
-Mapped source projects: 5
+Mapped source projects: 6
 
-Detected source tables: 128
+Detected source tables: 162
 
 | Source Project | Table | Framework | Columns | Source File |
 | --- | --- | --- | ---: | --- |
@@ -60,6 +60,40 @@ Detected source tables: 128
 | AIAntiFraud | transactions | SQL | 17 | server/schema.sql |
 | AIAntiFraud | users | SQL | 7 | server/schema.sql |
 | AIAntiFraud | watchlist | SQL | 10 | server/schema.sql |
+| AIBailBondRiskAssessor | ai_results | SQL | 8 | server/setup-db.js |
+| AIBailBondRiskAssessor | ai_results | SQL | 8 | server/services/openrouter.js |
+| AIBailBondRiskAssessor | ai_results | SQL | 8 | server/routes/aiNew.js |
+| AIBailBondRiskAssessor | audit_log | SQL | 8 | server/setup-db.js |
+| AIBailBondRiskAssessor | bail_bond_status_history | SQL | 7 | server/setup-db.js |
+| AIBailBondRiskAssessor | bail_bonds | SQL | 14 | server/setup-db.js |
+| AIBailBondRiskAssessor | community_ties | SQL | 16 | server/setup-db.js |
+| AIBailBondRiskAssessor | compliance_reports | SQL | 16 | server/setup-db.js |
+| AIBailBondRiskAssessor | court_cases | SQL | 18 | server/setup-db.js |
+| AIBailBondRiskAssessor | criminal_histories | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | defendants | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | employment_records | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | financial_analyses | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | flight_risk_analyses | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_ai_driven_bond_pricing_despite_financial_analys.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_anomaly_detection_on_check_in_curfew_violations.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_defendant_facing_mobile_check_in_app.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_direct_pacer_ncic_court_record_sync.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_e_signature_workflow_for_bond_contracts.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_gps_ankle_monitor_device_integration.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_nlp_intake_of_police_reports_arrest_records.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_payment_processing_for_premiums_and_collateral.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_predictive_court_date_no_show_forecasting.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_sms_voice_reminder_delivery_notifications_modul.js |
+| AIBailBondRiskAssessor | gap_features | SQL | 6 | server/routes/gap_no_vision_document_ocr_for_booking_sheets.js |
+| AIBailBondRiskAssessor | integration_log | SQL | 6 | server/routes/integrations.js |
+| AIBailBondRiskAssessor | mental_health_evaluations | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | notifications | SQL | 15 | server/setup-db.js |
+| AIBailBondRiskAssessor | recidivism_predictions | SQL | 17 | server/setup-db.js |
+| AIBailBondRiskAssessor | risk_assessments | SQL | 18 | server/setup-db.js |
+| AIBailBondRiskAssessor | substance_abuse_assessments | SQL | 16 | server/setup-db.js |
+| AIBailBondRiskAssessor | sureties | SQL | 18 | server/setup-db.js |
+| AIBailBondRiskAssessor | users | SQL | 7 | server/setup-db.js |
+| AIBailBondRiskAssessor | webhooks | SQL | 8 | server/routes/webhooks.js |
 | AICustoms | audit_trail | SQL | 12 | src/db/migrate.js |
 | AICustoms | audit_trail | SQL | 12 | database/schema.sql |
 | AICustoms | compliance_screenings | SQL | 12 | src/db/migrate.js |

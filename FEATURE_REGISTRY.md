@@ -20,3 +20,13 @@
 ## Feature Optimization
 
 Similar donor-project capabilities are normalized into common feature names and exposed in one sidebar instead of donor-project navigation.
+
+## Bail Bond Risk
+
+- Bond Risk Assessment
+- Court Appearance Monitoring
+- Surety Packet
+
+## Focused enhancement: Bail Bond Risk
+
+Source evidence: AIBailBondRiskAssessor.

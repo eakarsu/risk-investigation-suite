@@ -7,6 +7,9 @@ Primary routes:
 - `/profiles`
 
 Feature routes:
+- `/surety-packet`
+- `/court-appearance-monitoring`
+- `/bond-risk-assessment`
 - `/cases`
 - `/fraud-alerts`
 - `/aml-monitoring`

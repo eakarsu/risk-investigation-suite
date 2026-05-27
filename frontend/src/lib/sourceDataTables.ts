@@ -5069,6 +5069,3730 @@ export const sourceDataTables: SourceDataTable[] = [
     ]
   },
   {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-ai-results",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "entity_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type VARCHAR(100)"
+      },
+      {
+        "name": "entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id INTEGER"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(255)"
+      },
+      {
+        "name": "request_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "request_payload JSONB"
+      },
+      {
+        "name": "response",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-services-openrouter-js-ai-results",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "server/services/openrouter.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "entity_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type VARCHAR(100)"
+      },
+      {
+        "name": "entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id INTEGER"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(255)"
+      },
+      {
+        "name": "request_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "request_payload JSONB"
+      },
+      {
+        "name": "response",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-ai-new-js-ai-results",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "server/routes/aiNew.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature VARCHAR(100)"
+      },
+      {
+        "name": "entity_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type VARCHAR(100)"
+      },
+      {
+        "name": "entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id INTEGER"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(255)"
+      },
+      {
+        "name": "request_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "request_payload JSONB"
+      },
+      {
+        "name": "response",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-audit-log",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "audit_log",
+    "displayName": "Audit Log",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(10) NOT NULL"
+      },
+      {
+        "name": "entity_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id INTEGER"
+      },
+      {
+        "name": "details",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "details JSONB"
+      },
+      {
+        "name": "ip_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ip_address VARCHAR(45)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-bail-bond-status-history",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "bail_bond_status_history",
+    "displayName": "Bail Bond Status History",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "bail_bond_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bail_bond_id INTEGER REFERENCES bail_bonds(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "old_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "old_status VARCHAR(50)"
+      },
+      {
+        "name": "new_status",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "new_status VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "changed_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "changed_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "changed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "changed_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-bail-bonds",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "bail_bonds",
+    "displayName": "Bail Bonds",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "bond_amount",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bond_amount DECIMAL(12,2)"
+      },
+      {
+        "name": "premium_amount",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "premium_amount DECIMAL(12,2)"
+      },
+      {
+        "name": "bond_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bond_type VARCHAR(50)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Active'"
+      },
+      {
+        "name": "court_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "court_date DATE"
+      },
+      {
+        "name": "court_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "court_name VARCHAR(255)"
+      },
+      {
+        "name": "case_number",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "case_number VARCHAR(100)"
+      },
+      {
+        "name": "charge",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "charge TEXT"
+      },
+      {
+        "name": "collateral",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "collateral TEXT"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-community-ties",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "community_ties",
+    "displayName": "Community Ties",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "relationship_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "relationship_type VARCHAR(100)"
+      },
+      {
+        "name": "contact_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contact_name VARCHAR(255)"
+      },
+      {
+        "name": "contact_phone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contact_phone VARCHAR(20)"
+      },
+      {
+        "name": "contact_address",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contact_address TEXT"
+      },
+      {
+        "name": "years_known",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "years_known INTEGER"
+      },
+      {
+        "name": "frequency_of_contact",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "frequency_of_contact VARCHAR(50)"
+      },
+      {
+        "name": "willingness_to_supervise",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "willingness_to_supervise BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "verified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "community_involvement",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "community_involvement TEXT"
+      },
+      {
+        "name": "organization_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "organization_name VARCHAR(255)"
+      },
+      {
+        "name": "tie_strength",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tie_strength VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-compliance-reports",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "compliance_reports",
+    "displayName": "Compliance Reports",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "report_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_type VARCHAR(100)"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Pending'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Pending'"
+      },
+      {
+        "name": "due_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "due_date DATE"
+      },
+      {
+        "name": "completed_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_date DATE"
+      },
+      {
+        "name": "jurisdiction",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "jurisdiction VARCHAR(100)"
+      },
+      {
+        "name": "regulatory_body",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "regulatory_body VARCHAR(255)"
+      },
+      {
+        "name": "findings",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "findings TEXT"
+      },
+      {
+        "name": "corrective_actions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "corrective_actions TEXT"
+      },
+      {
+        "name": "risk_rating",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_rating VARCHAR(50)"
+      },
+      {
+        "name": "assigned_to",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_to VARCHAR(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-court-cases",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "court_cases",
+    "displayName": "Court Cases",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "case_number",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "case_number VARCHAR(100)"
+      },
+      {
+        "name": "court_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "court_name VARCHAR(255)"
+      },
+      {
+        "name": "judge",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "judge VARCHAR(255)"
+      },
+      {
+        "name": "judge_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "judge_name VARCHAR(255)"
+      },
+      {
+        "name": "courtroom",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "courtroom VARCHAR(100)"
+      },
+      {
+        "name": "charge",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "charge TEXT"
+      },
+      {
+        "name": "charge_severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "charge_severity VARCHAR(50)"
+      },
+      {
+        "name": "next_hearing_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_hearing_date DATE"
+      },
+      {
+        "name": "hearing_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "hearing_type VARCHAR(100)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Pending'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Pending'"
+      },
+      {
+        "name": "prosecutor",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prosecutor VARCHAR(255)"
+      },
+      {
+        "name": "defense_attorney",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defense_attorney VARCHAR(255)"
+      },
+      {
+        "name": "reminder_sent",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "reminder_sent BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-criminal-histories",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "criminal_histories",
+    "displayName": "Criminal Histories",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "offense_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "offense_type VARCHAR(100)"
+      },
+      {
+        "name": "offense_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "offense_date DATE"
+      },
+      {
+        "name": "offense_description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "offense_description TEXT"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(50)"
+      },
+      {
+        "name": "disposition",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "disposition VARCHAR(100)"
+      },
+      {
+        "name": "sentence",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sentence TEXT"
+      },
+      {
+        "name": "jurisdiction",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "jurisdiction VARCHAR(100)"
+      },
+      {
+        "name": "case_number",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "case_number VARCHAR(100)"
+      },
+      {
+        "name": "arresting_agency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "arresting_agency VARCHAR(255)"
+      },
+      {
+        "name": "conviction_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "conviction_date DATE"
+      },
+      {
+        "name": "release_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "release_date DATE"
+      },
+      {
+        "name": "probation_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "probation_status VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-defendants",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "defendants",
+    "displayName": "Defendants",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "first_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "first_name VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "last_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_name VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "date_of_birth",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "date_of_birth DATE"
+      },
+      {
+        "name": "ssn_last4",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ssn_last4 VARCHAR(4)"
+      },
+      {
+        "name": "address",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "address TEXT"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "city VARCHAR(100)"
+      },
+      {
+        "name": "state",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "state VARCHAR(50)"
+      },
+      {
+        "name": "zip_code",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "zip_code VARCHAR(10)"
+      },
+      {
+        "name": "phone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "phone VARCHAR(20)"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255)"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "gender VARCHAR(20)"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'PENDING'",
+        "sourceLine": "risk_level VARCHAR(20) DEFAULT 'PENDING'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Active'"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-employment-records",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "employment_records",
+    "displayName": "Employment Records",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "employer_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employer_name VARCHAR(255)"
+      },
+      {
+        "name": "position",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "position VARCHAR(255)"
+      },
+      {
+        "name": "employment_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employment_type VARCHAR(50)"
+      },
+      {
+        "name": "start_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "start_date DATE"
+      },
+      {
+        "name": "end_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "end_date DATE"
+      },
+      {
+        "name": "monthly_income",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "monthly_income DECIMAL(10,2)"
+      },
+      {
+        "name": "supervisor_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supervisor_name VARCHAR(255)"
+      },
+      {
+        "name": "supervisor_phone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supervisor_phone VARCHAR(20)"
+      },
+      {
+        "name": "verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "verified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "verification_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "verification_date DATE"
+      },
+      {
+        "name": "verification_method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "verification_method VARCHAR(100)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Current'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Current'"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-financial-analyses",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "financial_analyses",
+    "displayName": "Financial Analyses",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "annual_income",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "annual_income DECIMAL(12,2)"
+      },
+      {
+        "name": "monthly_expenses",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "monthly_expenses DECIMAL(10,2)"
+      },
+      {
+        "name": "total_assets",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "total_assets DECIMAL(12,2)"
+      },
+      {
+        "name": "total_liabilities",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "total_liabilities DECIMAL(12,2)"
+      },
+      {
+        "name": "credit_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "credit_score INTEGER"
+      },
+      {
+        "name": "bank_accounts",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bank_accounts INTEGER"
+      },
+      {
+        "name": "property_owned",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "property_owned BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "vehicles_owned",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "vehicles_owned INTEGER DEFAULT 0"
+      },
+      {
+        "name": "investment_accounts",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "investment_accounts INTEGER DEFAULT 0"
+      },
+      {
+        "name": "outstanding_debts",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "outstanding_debts DECIMAL(12,2)"
+      },
+      {
+        "name": "bankruptcy_history",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "bankruptcy_history BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "financial_stability_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "financial_stability_score INTEGER"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-flight-risk-analyses",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "flight_risk_analyses",
+    "displayName": "Flight Risk Analyses",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "passport_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "passport_status VARCHAR(50)"
+      },
+      {
+        "name": "travel_history",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "travel_history TEXT"
+      },
+      {
+        "name": "foreign_connections",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "foreign_connections TEXT"
+      },
+      {
+        "name": "prior_fta",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "prior_fta INTEGER DEFAULT 0"
+      },
+      {
+        "name": "community_roots",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "community_roots TEXT"
+      },
+      {
+        "name": "employment_stability",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employment_stability VARCHAR(50)"
+      },
+      {
+        "name": "family_ties",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "family_ties TEXT"
+      },
+      {
+        "name": "financial_resources",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "financial_resources TEXT"
+      },
+      {
+        "name": "risk_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_score INTEGER"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_level VARCHAR(20)"
+      },
+      {
+        "name": "ai_assessment",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_assessment TEXT"
+      },
+      {
+        "name": "monitoring_recommendation",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "monitoring_recommendation TEXT"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-ai-driven-bond-pricing-despite-financial-analys-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_driven_bond_pricing_despite_financial_analys.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-anomaly-detection-on-check-in-curfew-violations-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_anomaly_detection_on_check_in_curfew_violations.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-defendant-facing-mobile-check-in-app-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_defendant_facing_mobile_check_in_app.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-direct-pacer-ncic-court-record-sync-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_direct_pacer_ncic_court_record_sync.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-e-signature-workflow-for-bond-contracts-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_e_signature_workflow_for_bond_contracts.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-gps-ankle-monitor-device-integration-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_gps_ankle_monitor_device_integration.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-nlp-intake-of-police-reports-arrest-records-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_nlp_intake_of_police_reports_arrest_records.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-payment-processing-for-premiums-and-collateral-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_payment_processing_for_premiums_and_collateral.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-predictive-court-date-no-show-forecasting-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_predictive_court_date_no_show_forecasting.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-sms-voice-reminder-delivery-notifications-modul-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_sms_voice_reminder_delivery_notifications_modul.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-gap-no-vision-document-ocr-for-booking-sheets-js-gap-features",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_vision_document_ocr_for_booking_sheets.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-integrations-js-integration-log",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "integration_log",
+    "displayName": "Integration Log",
+    "framework": "SQL",
+    "sourceFile": "server/routes/integrations.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "provider",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "provider VARCHAR(64) NOT NULL"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload JSONB"
+      },
+      {
+        "name": "response",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-mental-health-evaluations",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "mental_health_evaluations",
+    "displayName": "Mental Health Evaluations",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "diagnosis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "diagnosis VARCHAR(255)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(50)"
+      },
+      {
+        "name": "treatment_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "treatment_status VARCHAR(50)"
+      },
+      {
+        "name": "medication",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "medication TEXT"
+      },
+      {
+        "name": "therapist_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "therapist_name VARCHAR(255)"
+      },
+      {
+        "name": "therapy_frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "therapy_frequency VARCHAR(50)"
+      },
+      {
+        "name": "last_evaluation_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_evaluation_date DATE"
+      },
+      {
+        "name": "hospitalization_history",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "hospitalization_history TEXT"
+      },
+      {
+        "name": "risk_to_self",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_to_self VARCHAR(20)"
+      },
+      {
+        "name": "risk_to_others",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_to_others VARCHAR(20)"
+      },
+      {
+        "name": "competency_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "competency_status VARCHAR(50)"
+      },
+      {
+        "name": "compliance_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "compliance_level VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-notifications",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "notifications",
+    "displayName": "Notifications",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255)"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(50)"
+      },
+      {
+        "name": "priority",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'MEDIUM'",
+        "sourceLine": "priority VARCHAR(20) DEFAULT 'MEDIUM'"
+      },
+      {
+        "name": "recipient_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recipient_id INTEGER"
+      },
+      {
+        "name": "related_entity_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "related_entity_type VARCHAR(50)"
+      },
+      {
+        "name": "related_entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "related_entity_id INTEGER"
+      },
+      {
+        "name": "is_read",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_read BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "action_required",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "action_required BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "action_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action_url VARCHAR(255)"
+      },
+      {
+        "name": "due_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "due_date DATE"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-recidivism-predictions",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "recidivism_predictions",
+    "displayName": "Recidivism Predictions",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "prediction_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prediction_score INTEGER"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_level VARCHAR(20)"
+      },
+      {
+        "name": "prior_offenses_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prior_offenses_count INTEGER"
+      },
+      {
+        "name": "age_at_first_offense",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "age_at_first_offense INTEGER"
+      },
+      {
+        "name": "offense_type_pattern",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "offense_type_pattern VARCHAR(255)"
+      },
+      {
+        "name": "time_since_last_offense",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "time_since_last_offense VARCHAR(100)"
+      },
+      {
+        "name": "social_factors",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "social_factors TEXT"
+      },
+      {
+        "name": "economic_factors",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "economic_factors TEXT"
+      },
+      {
+        "name": "behavioral_indicators",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "behavioral_indicators TEXT"
+      },
+      {
+        "name": "protective_factors",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "protective_factors TEXT"
+      },
+      {
+        "name": "ai_prediction",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_prediction TEXT"
+      },
+      {
+        "name": "model_version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_version VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-risk-assessments",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "risk_assessments",
+    "displayName": "Risk Assessments",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "risk_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_score INTEGER"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_level VARCHAR(20)"
+      },
+      {
+        "name": "flight_risk_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "flight_risk_score INTEGER"
+      },
+      {
+        "name": "recidivism_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recidivism_score INTEGER"
+      },
+      {
+        "name": "community_ties_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "community_ties_score INTEGER"
+      },
+      {
+        "name": "employment_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employment_score INTEGER"
+      },
+      {
+        "name": "financial_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "financial_score INTEGER"
+      },
+      {
+        "name": "substance_abuse_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "substance_abuse_score INTEGER"
+      },
+      {
+        "name": "mental_health_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mental_health_score INTEGER"
+      },
+      {
+        "name": "criminal_history_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "criminal_history_score INTEGER"
+      },
+      {
+        "name": "overall_recommendation",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "overall_recommendation VARCHAR(50)"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "assessor_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assessor_notes TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'Completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-substance-abuse-assessments",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "substance_abuse_assessments",
+    "displayName": "Substance Abuse Assessments",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "substance_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "substance_type VARCHAR(100)"
+      },
+      {
+        "name": "usage_frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "usage_frequency VARCHAR(50)"
+      },
+      {
+        "name": "last_use_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_use_date DATE"
+      },
+      {
+        "name": "treatment_history",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "treatment_history TEXT"
+      },
+      {
+        "name": "current_treatment",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "current_treatment BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "treatment_facility",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "treatment_facility VARCHAR(255)"
+      },
+      {
+        "name": "counselor_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "counselor_name VARCHAR(255)"
+      },
+      {
+        "name": "sobriety_duration",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sobriety_duration VARCHAR(100)"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_level VARCHAR(20)"
+      },
+      {
+        "name": "drug_test_results",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "drug_test_results VARCHAR(50)"
+      },
+      {
+        "name": "compliance_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "compliance_status VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-sureties",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "sureties",
+    "displayName": "Sureties",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "defendant_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defendant_id INTEGER REFERENCES defendants(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "surety_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "surety_name VARCHAR(255)"
+      },
+      {
+        "name": "relationship",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "relationship VARCHAR(100)"
+      },
+      {
+        "name": "phone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "phone VARCHAR(20)"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255)"
+      },
+      {
+        "name": "address",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "address TEXT"
+      },
+      {
+        "name": "occupation",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "occupation VARCHAR(255)"
+      },
+      {
+        "name": "annual_income",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "annual_income DECIMAL(12,2)"
+      },
+      {
+        "name": "assets_value",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assets_value DECIMAL(12,2)"
+      },
+      {
+        "name": "collateral_offered",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "collateral_offered TEXT"
+      },
+      {
+        "name": "collateral_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "collateral_type VARCHAR(100)"
+      },
+      {
+        "name": "verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "verified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "verification_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "verification_date DATE"
+      },
+      {
+        "name": "reliability_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "reliability_score INTEGER"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-setup-db-js-users",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "server/setup-db.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password_hash",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_hash VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'assessor'",
+        "sourceLine": "role VARCHAR(50) DEFAULT 'assessor'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-bail-bond-risk-assessor-server-routes-webhooks-js-webhooks",
+    "sourceProject": "AIBailBondRiskAssessor",
+    "name": "webhooks",
+    "displayName": "Webhooks",
+    "framework": "SQL",
+    "sourceFile": "server/routes/webhooks.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "url",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url TEXT NOT NULL"
+      },
+      {
+        "name": "events",
+        "type": "TEXT[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "ARRAY['risk_assessment.created']::text[]",
+        "sourceLine": "events TEXT[] NOT NULL DEFAULT ARRAY['risk_assessment.created']::text[]"
+      },
+      {
+        "name": "secret",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "secret VARCHAR(255)"
+      },
+      {
+        "name": "active",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "active BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
     "id": "ai-customs-src-db-migrate-js-audit-trail",
     "sourceProject": "AICustoms",
     "name": "audit_trail",

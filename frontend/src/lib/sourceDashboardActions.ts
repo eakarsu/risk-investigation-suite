@@ -10,6 +10,21 @@ export type SourceDashboardAction = {
 
 export const sourceDashboardActions: SourceDashboardAction[] = [
   {
+    "id": "bail-bond-risk",
+    "label": "Bail Bond Risk",
+    "description": "Open Bail Bond Risk workflows elevated from AIBailBondRiskAssessor.",
+    "href": "/bond-risk-assessment",
+    "sourceProjects": [
+      "AIBailBondRiskAssessor"
+    ],
+    "examples": [
+      "Bond Risk Assessment",
+      "Court Appearance Monitoring",
+      "Surety Packet"
+    ],
+    "count": 1
+  },
+  {
     "id": "ai-assistant",
     "label": "AI Assistant",
     "description": "Run source-derived AI assistant workflows and prompts.",

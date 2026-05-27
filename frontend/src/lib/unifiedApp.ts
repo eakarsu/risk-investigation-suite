@@ -176,6 +176,48 @@ const features = [
     metrics: [{ label: 'Audit Items', value: '514', note: 'Collected' }, { label: 'Gaps', value: '26', note: 'Open' }, { label: 'Ready', value: '82%', note: 'Score' }],
   },
   {
+    slug: "bond-risk-assessment",
+    title: "Bond Risk Assessment",
+    href: "/bond-risk-assessment",
+    category: "Bail Bond Risk",
+    icon: Workflow,
+    summary: "Defendant risk, court history, employment, residence, and appearance likelihood.",
+    bullets: ["Bond Risk Assessment queue","AI assisted review","Audit trail"],
+    metrics: [
+      { label: "Bond Risk Assessment", value: "28", note: 'Active' },
+      { label: 'Review', value: "5", note: 'Needs attention' },
+      { label: 'Due Soon', value: "3", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "court-appearance-monitoring",
+    title: "Court Appearance Monitoring",
+    href: "/court-appearance-monitoring",
+    category: "Bail Bond Risk",
+    icon: Workflow,
+    summary: "Upcoming hearings, reminders, exceptions, and missed appearance risk.",
+    bullets: ["Court Appearance Monitoring queue","AI assisted review","Audit trail"],
+    metrics: [
+      { label: "Court Appearance Monitoring", value: "39", note: 'Active' },
+      { label: 'Review', value: "6", note: 'Needs attention' },
+      { label: 'Due Soon', value: "4", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "surety-packet",
+    title: "Surety Packet",
+    href: "/surety-packet",
+    category: "Bail Bond Risk",
+    icon: Workflow,
+    summary: "Collateral, indemnitor, risk notes, documents, and approval status.",
+    bullets: ["Surety Packet queue","AI assisted review","Audit trail"],
+    metrics: [
+      { label: "Surety Packet", value: "50", note: 'Active' },
+      { label: 'Review', value: "7", note: 'Needs attention' },
+      { label: 'Due Soon', value: "5", note: 'Next 14 days' },
+    ],
+  },
+  {
     slug: 'documents',
     title: 'Documents',
     href: '/documents',
@@ -281,6 +323,7 @@ export const featureFamilies = [
   { name: 'Portfolio Risk', features: ['Credit Risk'] },
   { name: 'Governance', features: ['Compliance', 'Audit Readiness'] },
   { name: 'Core Platform', features: ['Documents', 'Notifications', 'Integrations', 'Profiles'] },
+  { name: 'Bail Bond Risk', features: ["Bond Risk Assessment","Court Appearance Monitoring","Surety Packet"] },
   { name: 'Intelligence Layer', features: ['AI Assistant', 'AI Tools'] },
 ];
 
